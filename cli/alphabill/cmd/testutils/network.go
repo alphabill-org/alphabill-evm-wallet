@@ -19,8 +19,7 @@ import (
 )
 
 const (
-	
-	defaultDockerImage   = "ghcr.io/alphabill-org/alphabill:2f805e854307903f133ab65c9e5c2d4fb4906a04"
+	defaultDockerImage   = "ghcr.io/alphabill-org/alphabill-evm:c8497bca8434c6f01f56c932cc42f39d4a2f915b"
 	containerGenesisPath = "/home/nonroot/genesis.tar"
 	containerP2pPort     = "8000"
 	containerRpcPort     = "8001"
@@ -191,7 +190,7 @@ func (n *AlphabillNetwork) startRootNode(t *testing.T) {
 	args := []string{
 		"root-node", "run",
 		"--home", "/home/nonroot/root",
-		"--address", "/ip4/0.0.0.0/tcp/"+containerP2pPort,
+		"--address", "/ip4/0.0.0.0/tcp/" + containerP2pPort,
 		"--log-file", "stdout",
 		"--log-level", "info",
 		"--log-format", "text",

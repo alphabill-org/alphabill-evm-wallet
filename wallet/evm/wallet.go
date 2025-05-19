@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/alphabill-org/alphabill-evm/txsystem/evm"
 	"github.com/alphabill-org/alphabill-go-base/crypto"
-	"github.com/alphabill-org/alphabill-go-base/txsystem/evm"
 	"github.com/alphabill-org/alphabill-go-base/types"
 
 	sdktypes "github.com/alphabill-org/alphabill-wallet/client/types"
